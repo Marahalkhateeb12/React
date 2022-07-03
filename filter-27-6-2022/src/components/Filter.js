@@ -70,26 +70,15 @@ class Filter extends Component {
               onChange={this.handleChangeName}
             />
           </div>
-          <div className="table">
-             
-             <tr>
-                <th>
-         Film Title
-             </th>
-             <th>
-         Film Description
-             </th>
-             </tr>   
-        </div>
+     
         {isLoading && <div>Loading</div>}
         {Data.length > 0 &&
           !isLoading &&
           Data.map((film) => (
-          <tr>
-            <td> {film.title}</td>
-            <td> {film.overview}</td>
+         
+             film.title
             
-            </tr>
+      
             
           ))}
         {error && <div>Fail, can not display the data</div>}

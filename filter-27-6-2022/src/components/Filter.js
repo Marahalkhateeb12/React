@@ -75,13 +75,14 @@ class Filter extends Component {
         {Data.length > 0 &&
           !isLoading &&
           Data.map((film) => (
-         
-             film.title
+         <div>
+            <div>{film.title}</div> <br/>
+           </div>
             
       
             
           ))}
-        {error && <div>Fail, can not display the data</div>}
+        {}
       </div>
       </div>
   
